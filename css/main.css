@@ -185,16 +185,6 @@ p {
 
 .img-round {
     border-radius: 50%;
-    text-align: center;
-}
-
-.b-lazy:not([class='b-lazy b-loaded']) {
-	height: 64px;
-	width: 64px;
-	padding-top: 50%;
-	/* padding-left: 50%; */
-	margin-top: -32px;
-	/* margin-left: -32px; */
 }
 
 
@@ -420,19 +410,9 @@ section .sub-heading {
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: cover;
-}
-
-.porfolio-card-img .b-lazy {
-	left: 50%;
-	margin-left: -32px;
-}
-
-.porfolio-card .b-loaded {
     width: 100%;
     height: 100%;
-	left: 0;
-	margin: 0;
+    object-fit: cover;
 }
 
 .about-us  {}
@@ -521,10 +501,10 @@ section .sub-heading {
     border: 8px solid #F2F2F2;
     height: 167px;
     width: 167px;
-    background: #bbbbbb;
+    background: black;
 }
 
-.our-history-item .img-round img.b-loaded {
+.our-history-item .img-round img {
     width: 100%;
     min-height: 100%;
     object-fit: cover;
@@ -574,7 +554,7 @@ section .sub-heading {
     width: 220px;
     height: 220px;
     border: 8px solid white;
-    background-color: #bbbbbb;
+    background-color: black;
     /* box-sizing: border-box; */
 }
 
