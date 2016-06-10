@@ -103,9 +103,21 @@ textarea {
 	display: inline-block;
 }
 
+.soc-link-twiter:hover {
+	background-color: #00aced !important;
+	border-color: #00aced !important;
+	color: white !important;
+}
+
 .soc-link-facebook:before {
 	content: "\e741";
 	display: inline-block;
+}
+
+.soc-link-facebook:hover {
+	background-color: #3b5998 !important;
+	border-color: #3b5998 !important;
+	color: white !important;
 }
 
 .soc-link-printest:before {
@@ -113,17 +125,27 @@ textarea {
 	display: inline-block;
 }
 
+.soc-link-printest:hover {
+	background-color: #cb2028 !important;
+	border-color: #cb2028 !important;
+	color: white !important;
+}
+
 .soc-link-google:before {
 	content: "\e73e";
 	display: inline-block;
 }
 
+.soc-link-google:hover {
+	background-color: #da2713 !important;
+	border-color: #da2713 !important;
+	color: white !important;
+}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 .wrap {
     position: relative;
-    max-width: 1400px;
     font-size: 10px;
 }
 
@@ -310,7 +332,6 @@ header .container {
     text-transform: uppercase;
     line-height: 1.6;
     letter-spacing: -2px;
-    
 }
 
 section {
@@ -450,6 +471,8 @@ section .sub-heading {
     position: relative;
     margin-bottom: 88px;
 }
+
+
 
 .our-history-item:last-child {
     margin-bottom: 0;
@@ -620,8 +643,8 @@ section .sub-heading {
 }
 
 .our-partners {
-    padding: 65px 0;
-    height: 170px;
+    padding: 54px 0;
+    /* height: 170px; */
     box-sizing: border-box;
     text-align: center;
 }
@@ -631,7 +654,8 @@ section .sub-heading {
 }
 
 .our-partners .container a {
-	margin: 0 10px;
+	display: inline-block;
+	margin: 10px;
 }
 
 .contact-us {
@@ -656,6 +680,7 @@ section .sub-heading {
 
 .contact-us input[type='text'] {
     width: 48.7%;
+    /* width: 100%; */
     float: left;
     margin-bottom: 27px;
     margin-right: 2.7%;
@@ -721,6 +746,74 @@ section .sub-heading {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
+@media screen and (max-width: 1200px) {
+	.home {}
+}
+
+@media screen and (max-width: 992px) {
+	.team-item {
+		width: 100%;
+		margin: 0 !important;
+		margin-bottom: 10px !important;
+	}
+	.home {
+		background-image: url('../img/home-bg-075.jpg');
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.logo {
+		float: none;
+		text-align: center;
+	}
+	.nav {
+		float: none;
+		text-align: center;
+	}
+	.navigation li {
+		margin-left: 0
+	}
+    .col-3 {
+        width: 50%;
+    }
+    .our-history-item {
+    	text-align: center !important;
+    }
+    .our-history-item-desc {
+        float: none !important;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0 !important;
+        padding: 0 !important;
+        text-align: center !important;
+    }
+
+    .our-history {
+    	margin-left: 0;
+    	margin-right: 0;
+    	text-align: center;
+    }
+
+    .our-history-item:after {
+    	display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .col-3 {
+        width: 100%;
+    }
+    .home h2.welcome {
+    	font-size: 5.5em;
+    }
+    .contact-us input[type='text'] {
+    	width: 100%;
+    }
+    .contact-us form textarea {
+    	width: 100%;
+    }
+}
 
 
 
